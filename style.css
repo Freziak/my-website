@@ -1,13 +1,148 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+/* Ogólne ustawienia */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(237, 249, 254);
+    color: rgb(0, 28, 85);
     margin: 0;
     padding: 0;
-}
-html {
-    scroll-padding: 82px;
+    line-height: 1.6;
 }
 
-body {
-    position: relative;
-    background-color: #ebecf2;
+/* Nagłówki */
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(200, 230, 250);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.name {
+    text-align: left;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(0, 28, 85);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: rgb(30, 60, 120);
+}
+
+/* Sekcja informacji */
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.info h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 18px;
+    max-width: 400px;
+}
+
+.info img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.images img{
+    width: auto;
+    height: 50px;
+
+}
+
+/* Linki społecznościowe */
+.links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 28, 85);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: rgb(30, 60, 120);
+}
+
+/* Sekcja "Co potrafię?" */
+.co-potrafie {
+    padding: 20px;
+}
+
+.co-potrafie ul {
+    list-style: disc;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 500px;
+}
+
+.co-potrafie ul li {
+    margin: 10px 0;
+}
+
+/* Sekcja edukacji */
+.education p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.education ol {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+/* Projekty */
+.projects p, .projects a {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Sekcja kontaktu */
+.contact p, .contact a {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Stopka */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(200, 230, 250);
+    color: rgb(0, 28, 85);
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
 }
